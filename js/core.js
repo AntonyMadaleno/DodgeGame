@@ -26,6 +26,7 @@ const pause_win = eventWindow("PAUSE",
 					}
 
 				);
+pause_win.style.display = "none";
 
 function load()
 {
@@ -213,6 +214,7 @@ window.addEventListener("keydown", function(event) {
 function retry()
 {
 	sc = 0;
+	ay = 0;
 	timer.innerHTML = "0 : 0";
 	rocks = new Array();
 	restart = true;
